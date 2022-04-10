@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 구글폰트  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
+  <!-- 슬라이더 라이브러리 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+  <!-- 상품 라이브러리 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="./css/redesign.css">
+  <script src="./js/redesign.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 상단바 시작 -->
+  <div class="top-bar-wrap">
+
+    <div class="top-bar con row">
+
+      <div class="logo-box cell">
+
+        <div class="logo"><a href="#"><svg width="167" height="37" viewBox="0 0 157 27" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.318 24.338C10.218 24.338 11.882 21.582 11.882 18.15V4.838H8.866V17.864C8.866 20.672 7.904 21.712 5.98 21.712C4.732 21.712 3.692 21.114 2.886 19.632L0.78 21.166C1.976 23.272 3.744 24.338 6.318 24.338ZM16.8169 24H19.8329V4.838H16.8169V24ZM24.8404 24H35.9684V21.452H27.8564V4.838H24.8404V24ZM39.3384 24H50.4664V21.452H42.3544V4.838H39.3384V24ZM58.5855 24.338C62.7715 24.338 65.3195 21.842 65.3195 18.774C65.3195 15.966 63.6815 14.562 61.4195 13.6L58.7935 12.482C57.2335 11.858 55.6995 11.234 55.6995 9.57C55.6995 8.062 56.9735 7.126 58.9235 7.126C60.6135 7.126 61.9395 7.776 63.1355 8.842L64.7215 6.918C63.2655 5.436 61.1595 4.5 58.9235 4.5C55.2835 4.5 52.6315 6.762 52.6315 9.778C52.6315 12.56 54.6855 14.016 56.5315 14.796L59.1835 15.94C60.9515 16.72 62.2515 17.266 62.2515 19.008C62.2515 20.62 60.9515 21.712 58.6375 21.712C56.7915 21.712 54.9195 20.828 53.5415 19.45L51.7735 21.53C53.5155 23.298 55.9595 24.338 58.5855 24.338ZM72.2599 24H75.2759V7.386H80.9179V4.838H66.6439V7.386H72.2599V24ZM91.249 24.338C95.487 24.338 98.347 22.024 98.347 15.784V4.838H95.435V15.992C95.435 20.308 93.667 21.712 91.249 21.712C88.857 21.712 87.141 20.308 87.141 15.992V4.838H84.125V15.784C84.125 22.024 87.011 24.338 91.249 24.338ZM106.532 13.6C107.156 11.52 107.754 9.414 108.3 7.23H108.43C109.002 9.388 109.574 11.52 110.224 13.6L110.978 16.174H105.752L106.532 13.6ZM100.344 24H103.412L105.05 18.54H111.706L113.318 24H116.516L110.172 4.838H106.688L100.344 24ZM119.04 24H122.056V16.278H125.15L129.492 24H132.898L128.218 15.888C130.636 15.134 132.222 13.366 132.222 10.402C132.222 6.268 129.258 4.838 125.306 4.838H119.04V24ZM122.056 13.86V7.282H124.942C127.724 7.282 129.232 8.088 129.232 10.402C129.232 12.716 127.724 13.86 124.942 13.86H122.056ZM139.57 24H142.586V7.386H148.228V4.838H133.954V7.386H139.57V24Z"
+                fill="black" />
+            </svg></a></div>
+      </div>
+
+      <div class="menu-box cell">
+        <ul class="nav-box row">
+          <li class="cell"><a href="#">ABOUT</a></li>
+
+          <li class="cell">
+            <a href="#">MEN</a>
+            <ul>
+              <li><a href="#">ARCHIVE</a></l>
+              <li><a href="#"></a>SHOPPING</li>
+              <li><a href="#"></a>EDITORIAL</li>
+            </ul>
+          </li>
+
+          <li class="cell">
+            <a href="#">WOMEN</a>
+            <ul>
+              <li><a href="#">ARCHIVE</a></li>
+              <li><a href="#"></a>SHOPPING</li>
+              <li><a href="#"></a>EDITORIAL</li>
+            </ul>
+          </li>
+
+          <li class="cell">
+            <a href="#">ACCESSORY</a>
+            <ul>
+              <li><a href="#">ARCHIVE</a></li>
+              <li><a href="#"></a>SHOPPING</li>
+              <li><a href="#"></a>EDITORIAL</li>
+            </ul>
+          </li>
+
+          <li class="cell">
+            <a href="#">SPORT</a>
+            <ul>
+              <li><a href="#">ARCHIVE</a></li>
+              <li><a href="#"></a>SHOPPING</li>
+              <li><a href="#"></a>EDITORIAL</li>
+            </ul>
+          </li>
+
+          <li class="cell"><a href="#">STORE</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="icon-wrap cell-r">
+
+
+
+        <div class="search-box row">
+          <form action="#">
+
+            <input class="cell" type="Search" placeholder="Search">
+            <a href="#"><i class="fas fa-search cell"></i></a>
+            <a href="#"> <i class="fas fa-user cell-r"></i></a>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 상단바 끝 -->
+
+  <!-- 슬라이드 -->
+
+
+  <div class="section">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+    <input type="radio" name="slide" id="slide04">
+    <div class="slide-wrap">
+      <ul class="slidelist">
+        <li>
+          <a href="#">
+            <label for="slide04" class="left"></label>
+            <img src="./img/포폴 완성파일/1 배너/1최종본1.jpg">
+            <label for="slide02" class="right"></label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label for="slide01" class="left"></label>
+            <img src="./img/포폴 완성파일/1 배너/2최종본1.jpg">
+            <label for="slide03" class="right"></label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label for="slide02" class="left"></label>
+            <img src="./img/포폴 완성파일/1 배너/3최종본1.jpg">
+            <label for="slide04" class="right"></label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label for="slide03" class="left"></label>
+            <img src="./img/포폴 완성파일/1 배너/4최종본1.jpg">
+            <label for="slide01" class="right"></label>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  
+  
+
+  <!-- 메뉴 슬라이드 --> 
+   <div class="Bname"> <p>NEW</p></div>
+
+<div class="slider-box-1">
+    <!-- Slider main container -->
+    <div class="swiper-container h-full">
+      
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper"> 
+        <!-- Slides -->
+         <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/1.jpg" alt="">
+          <span class="name">[22SS] 크림 짜임 긴팔 캐주얼 점퍼</span>
+          <span class="p1">￦537,880</span>
+          <span class="p2">￦789,680</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/2.jpg" alt="">
+          <span class="name">[21FW] 블랙 탈착카라 구스다운 패딩점퍼</span>
+          <span class="p1">￦661,000</span>
+          <span class="p2">￦869,990</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/3.jpg" alt="">
+          <span class="name1">[22SS] [소르베] 블랙 가죽 하트 스터디장식 명함 겸 카드지갑</span>
+          <span class="p1">￦79,420</span>
+          <span class="p2">￦119,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/4.jpg" alt="">
+          <span class="name">[22SS] 라이트블루 워싱 데님 N-1덱 트리커 자켓</span>
+          <span class="p1">￦378,000</span>
+          <span class="p2">￦426,600</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/5.jpg" alt="">
+          <span class="name">[21FW] 베이지 단색 올캐시미어혼방 스커트</span>
+          <span class="p1">￦266,490</span>
+          <span class="p2">￦396,880</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/6.jpg" alt="">
+          <span class="name">[21FW] [Loropiana] 스톰시스템 다크네이비 폭스터 패딩</span>
+          <span class="p1">￦1,611,000</span>
+          <span class="p2">￦1,986,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/7.jpg" alt="">
+          <span class="name">[21FW] 블랙 단색 울캐시미어혼방 스커트</span>
+          <span class="p1">￦266,490</span>
+          <span class="p2">￦318,880</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/8.jpg" alt="">
+          <span class="name">[22SS] 블랙 오버핏 항공 점퍼</span>
+          <span class="p1">￦987,000</span>
+          <span class="p2">￦1,180,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/9.jpg" alt="">
+          <span class="name">[22SS] 그레이 오버핏 항공 점퍼</span>
+          <span class="p1">￦987,000</span>
+          <span class="p2">￦1,180,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/10.jpg" alt="">
+          <span class="name">[22SS] 블랙 오버핏 램스킨 후드 패널 MA-1 점퍼</span>
+          <span class="p1">￦1,161,000</span>
+          <span class="p2">￦1,380,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/11.jpg" alt="">
+          <span class="name1">[22SS] [토피너백] 블랙 비건레더 미니 겸 크로스백(파우치 겸용)</span>
+          <span class="p1">￦150,100</span>
+          <span class="p2">￦162,000</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/2 신상품/12.jpg" alt="">
+          <span class="name">[21FW] 베이지 탈착후드 구스다운 패딩점퍼</span>
+          <span class="p1">￦899,100</span>
+          <span class="p2">￦998,000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="arrow">
+      <span class="slider-box-1__btn-left">
+        <i class="fa-solid fa-angle-left"></i>
+      </span>
+      <span class="slider-box-1__btn-right">
+        <i class="fa-solid fa-angle-right"></i>
+      </span>
+    </div>
+  </div>
+
+
+
+  <!-- 베스트 슬라이드 시작 -->
+  <div class="Bname"> <p>BEST</p> </div>
+
+  <div class="slider-box-2">
+      <!-- Slider main container -->
+      <div class="swiper-container h-full">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper"> 
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/1.jpg" alt="">
+            <span class="name">[21FM] 아이보리 탈착카라 구스다운 패딩점퍼 </span>
+            <span class="p1">￦661,000</span>
+            <span class="p2">￦895,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/2.jpg" alt="">
+            <span class="name">[22SS] 블루 워싱 후드 패널 데님 점퍼</span>
+            <span class="p1">￦655,500</span>
+            <span class="p2">￦690,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/3.jpg" alt="">
+            <span class="name">[21FW] 블랙 짜임배색 구스다운점퍼</span>
+            <span class="p1">￦314,370</span>
+            <span class="p2">￦499,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/4.jpg" alt="">
+            <span class="name">[21FM] 베이지 스트랩 구스다운점퍼</span>
+            <span class="p1">￦1,069,600</span>
+            <span class="p2">￦1,390,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/5.jpg" alt="">
+            <span class="name">[21FM] 베이지 단색 울캐시미어 혼방 숏코트</span>
+            <span class="p1">￦537,880</span>
+            <span class="p2">￦699,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/6.jpg" alt="">
+            <span class="name">[22SS] 스위프트 2.0 카키 가죽 남녀공용 스니커즈</span>
+            <span class="p1">￦64,050</span>
+            <span class="p2">￦99,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/7.jpg" alt="">
+            <span class="name">[21FM] 블랙 탈착카라 구스다운 패딩점퍼 </span>
+            <span class="p1">￦661,000</span>
+            <span class="p2">￦895,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/8.jpg" alt="">
+            <span class="name">[22SS] 중청 워싱 카라 집업 데님 자켓</span>
+            <span class="p1">￦441,000</span>
+            <span class="p2">￦490,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/9.jpg" alt="">
+            <span class="name">[22SS] 스위프트 2.0 크림 가죽 남녀공용 스니커즈</span>
+            <span class="p1">￦64,050</span>
+            <span class="p2">￦99,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/10.jpg" alt="">
+            <span class="name">[22SS] 블랙 가죽 레터링 로고 체인 카드 지갑</span>
+            <span class="p1">￦54,910</span>
+            <span class="p2">￦58,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/11.jpg" alt="">
+            <span class="name">[22SS] 스위프트 2.0 화이트 가죽 남녀공용 스니커즈</span>
+            <span class="p1">￦64,050</span>
+            <span class="p2">￦99,000</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/포폴 완성파일/3 베스트/12.jpg" alt="">
+            <span class="name1">[22SS] [토피넛백[ 아이보리 비건레더 미니 토트 겸 크로스백 (파우치 포함)</span>
+            <span class="p1">￦150,100,680</span>
+            <span class="p2">￦158,000</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="swiper-pagination"></div>
+
+      <div class="arrow">
+        <span class="slider-box-2__btn-left">
+          <i class="fa-solid fa-angle-left"></i>
+        </span>
+        <span class="slider-box-2__btn-right">
+          <i class="fa-solid fa-angle-right"></i>
+        </span>
+      </div>
+    </div>
+ 
+
+<div class="banner">
+  <a href="#">
+    <img src="./img/띠배너.jpg" alt="">
+  </a></div>
+    
+
+<!-- 베스트 슬라이드 시작 -->
+
+<div class="slider-box-3">
+    <!-- Slider main container -->
+    <div class="swiper-container h-full">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper"> 
+        <!-- Slides -->
+         <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/포폴 완성파일/5 특가 혜택 배너/6.jpg" alt="">
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="arrow">
+      <span class="slider-box-3__btn-left">
+        <i class="fa-solid fa-angle-left"></i>
+      </span>
+      <span class="slider-box-3__btn-right">
+        <i class="fa-solid fa-angle-right"></i>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="shop-wrap con row">
+
+    <div class="name">E-SHOP</div>
+    <hr>
+    
+    <div class="man-wrap cell">
+      
+      <img src="./img/E-SHOP/1.png" alt="">
+      <div class="man">MAN</div>
+      <div class="imfor">뉴욕 감성 특유의 스타일리시함과 위트있는 패션을 추구하며, <br>
+        컨템포러리 감성을 더해 만들어진 남성 라인입니다.</div>
+      <a href="#">SHOPING</a>
+      <ul>
+        <li><a href="#"> SNS </a>
+          <ul class="row">
+            <li class="cell"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+           <li class="cell"><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="women-wrap cell-r">
+      
+      <img class="cell-r" src="./img/E-SHOP/3.png" alt="">
+      <div class="women">WOMEN</div>
+      <div class="imfor">뉴욕의 모던한 감성을 로맨틱한 디자인으로 풀어냈으며,<br>
+        우아하고 컨템포러리한 디자인으로 사랑받는 여성 라인입니다. </div>
+      <a href="#">SHOPING</a>
+      <ul>
+        <li><a href="#"> SNS </a>
+          <ul>
+            <li class="cell"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li class="cell"><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ACCESSORY-wrap cell">
+    <img src="./img/E-SHOP/2.png" alt="">
+      <div class="ACCESSORY">ACCESSORY</div>
+      <div class="imfor">재치있고 경쾌한 20~30대 남녀들의 라이프 스타일을 바탕으로
+        <br> 디자인과 세련됨, 실용성을 겸비한 액세서리 아이템입니다.</div>
+      <a href="#">SHOPING</a>
+      <ul>
+        <li><a href="#"> SNS </a>
+          <ul>
+            <li class="cell"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li class="cell"><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="SPORT-wrap cell-r">
+      
+      <img class="cell-r" src="./img/E-SHOP/4.png" alt="">
+      <div class="SPORT">SPORT</div>
+      <div class="imfor">매 시즌 Stylish 한 Performance 아이템들을 선보이며,<br>
+        트렌드를 주도하는 스포츠 브랜드로 자리잡고 있습니다. </div>
+      <a href="#">SHOPING</a>
+      <ul>
+        <li><a href="#"> SNS </a>
+          <ul>
+            <li class="cell"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li class="cell"><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-wrap con row">
+
+
+  <div class="footer">
+
+    <div class="LF_logo cell">
+      <svg width="87" height="41" viewBox="0 0 87 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 10L11 4V29L25 37L18 41L0 31V10Z" fill="#8D8D8D"/>
+        <path d="M13 3L19 0L37.5 9.5V30.5L26.5 36.5V25.5L17.5 20.5V13.5L26.5 18.5V11.5L12.5 3.29" fill="#8D8D8D"/>
+        <path d="M46.5 2.5H54.5V31.5H65.5V34.5H46.5V2.5Z" fill="#8D8D8D"/>
+        <path d="M67.5 2.5V34.5H75.5V20.5H85.5V17.5H75.5V5.5H86.5V3.5V2.5H67.5Z" fill="#8D8D8D"/>
+        </svg>
+        
+    </div>
+
+    <div class="text_box cell">
+      COPYRIGHT 2018 LF. ALL RIGHTs RESERVED.
+    </div>
+
+  </div>           
+    
+</div>
+</body>
+
+</html>
